@@ -1,0 +1,29 @@
+Group,Description,Estimated time,Level,Maintenance sheet,Out of Service,Schedule,Time in service,Checking,Replacement,When necessary
+CNC,Console unit cleaning,0:05,L1,CNC.11.799,Yes,150,,,,
+CNC,Antivirus update,0:10,L1,CNC.19.799,No,150,,,,
+PLATINO LINEAR,Machine cleaning,0:20,L2,P9MC.00.001,Yes,150,,,,Yes
+PLATINO LINEAR,Capacitive sensor stand-off control,0:02,L1,P9.83.081,No,,,,,Yes
+PLATINO LINEAR,Head and tip cleaning,0:10,L1,P9HEAD.10.001,No,3 Shifts,,,,Yes
+PLATINO LINEAR,Check/replace tips,0:05,L1,P9HEAD.10.682,No,3 Shifts,,,,Yes
+PLATINO LINEAR,Check/clean automatic tip changer,0:20,L2,ATC.45.799,No,1000,,,,Yes
+PLATINO LINEAR,Check/clean cabin windows,0:10,L1,P9CABIN.49.001,No,150,,,,Yes
+PLATINO LINEAR,Replacement: Glass holder with glass,0:02,L1,P9OPTIC.11.040,No,50,,,,Yes
+PLATINO LINEAR,Focal position control,0:15,L1,OPTIC.12.799,No,,,,,Yes
+PLATINO LINEAR,Lubrication,0:30,L2,P9.12.799,No,500,,,,Yes
+PLATINO LINEAR,Check/Clean/Replace bellows,2:00,L2,P9.02.001,No,1000,,,When necessary,
+PLATINO LINEAR,Cutting gas purity check,-:--,L1,MC2D.13.001,Yes,,,,,Yes
+PLATINO LINEAR,Replace technological gas filters,0:30,L2,P9FILTER.15.030,Yes,8000,,,,
+Air treatment unit,Check components,0:05,L2,P9BEKO.12.004,No,,,150,,
+Air treatment unit,Replace components,-:--,L2,P9BEKO.12.005,Yes,SEE MAINTENANCE SHEET,,,,
+Prima Power Dust collector,Replace filter cartridges,0:30,L2,PDC.12.701,Yes,8000,,,,
+Prima Power Dust collector,Replace optical smoke sensor,0:15,L2,PDC.12.702,Yes,8000,2 Years,,,Yes
+Prima Power Dust collector,Emptying the dustbin,0:10,L1,PDC.12.703,Yes,,,,,Yes
+Sideros Dust collector,Replace filter cartridges,0:30,L2,SID.63.002,Yes,8000,,,,Yes
+Sideros Dust collector,Emptying the dustbin,0:10,L1,SID.63.001,Yes,,,,,Yes
+Sideros Microdosing system,Clean,0:20,L1,DOS.12.001,Yes,1000,,,,Yes
+Water panel,Check filters,0:02,L1,FILTER.10.001,No,1000,,,,Yes
+Water panel,Clean/replace filters and cartridges,0:30,L2,FILTER.15.002,Yes,4000,1 year,,,Yes
+Chiller,Check/topping up/replace chiller liquid,0:30,L2,CHILLER.10.001,Yes,,,150,8000,Topping off
+Automatic Pallet,Clean,1:00,L2,PAP9.40.001,No,150,,,,Yes
+Automatic Pallet,Clean straps,1:10,L2,PAP9.40.002,No,50,,,,Yes
+Automatic Pallet,Replace straps,2:00,L2,PAP9.40.003,No,250,,,,Yes

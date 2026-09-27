@@ -1,0 +1,23 @@
+2D Laser Maintenance is a guided reference for planned maintenance tasks on 2D laser systems and supporting equipment.
+
+Choose an equipment group and follow the fields that appear. Each selection narrows the next field, and values with only one match are filled automatically. The result shows the task description, estimated duration, required skill level, maintenance sheet reference, out-of-service status, and applicable service intervals.
+
+FEATURES
+- Browse planned maintenance information by equipment group and task
+- Review task descriptions and estimated durations
+- Check whether equipment must be taken out of service
+- Find maintenance sheet references
+- Review schedule, time-in-service, checking, replacement, and as-needed intervals
+- Understand L1 operator, L2 maintenance technician, and L3 authorized service technician requirements
+- Browse bundled maintenance data offline
+- Switch between system, light, and dark themes
+- Read in-app guidance for fields, workflow, safety, settings, and troubleshooting
+- Send questions with app and platform details through the Information tab
+
+The app includes schedules for CNC controls, Platino Linear machines, dust collectors, air treatment equipment, water panels, chillers, automatic pallets, and other related systems represented in the included maintenance data.
+
+CONNECTIVITY AND PRIVACY
+Browsing the bundled maintenance data does not require an internet connection. Sending a support question requires a connection and submits the name, email address, question, app version, and basic platform and layout details shown in the Information tab. The app contains no advertising or analytics SDKs.
+
+IMPORTANT SAFETY INFORMATION
+This app is a reference aid. It does not replace the machine manual, official maintenance sheets, qualified training, lockout procedures, personal protective equipment, or workplace safety requirements. Always follow the current approved instructions and ensure that work is carried out by personnel with the required skill level and authorization.
