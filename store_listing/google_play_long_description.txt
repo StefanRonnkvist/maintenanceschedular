@@ -1,0 +1,37 @@
+Maintenance Schedular keeps equipment records, recurring tasks, work orders, and workforce qualifications together in one practical workspace. Core data stays on your device, with no hosted account required.
+
+BUILD YOUR EQUIPMENT REGISTRY
+- Record model and serial information, location, manufacturer, operating hours, maintenance documents, and required licenses
+- Add sub-assemblies and recurring maintenance tasks at component level
+- Use built-in categories and task types, or create your own
+
+PLAN UPCOMING WORK
+- Forecast date-based tasks from each machine's last-check date
+- Search and filter maintenance by component category, task type, interval, or text
+- See work due in the next five days
+- Assign tasks to employees who match the machine's required licenses
+- Mark Contractor Needed when no qualified employee is available
+
+MANAGE PEOPLE AND OUTCOMES
+- Maintain employee records with skills and licenses
+- Search, filter, and sort the employee list
+- Save Work Complete, Partial, or Bypass outcomes
+- Add notes and reschedule Partial or Bypass work
+- Record timestamped changes to machine and sub-assembly operating details
+
+REPORT, MOVE, AND ENTER DATA
+- Print or share PDF machine-list, schedule, and seven-day work-order reports
+- Export and replace registry data with JSON
+- Import or export employee and machine CSV files
+- Create CSV templates for bulk entry
+
+PERSONALIZE THE WORKSPACE
+- Choose light, dark, or system appearance
+- Reorder navigation tabs for your workflow
+- Keep employee search, filter, and sort choices between sessions
+
+Important details:
+- Skills are recorded for reference; work-order eligibility is based on every license required by the machine
+- Date forecasts use calendar approximations for month and year intervals
+- Hour-based tasks are recorded but do not receive forecast calendar dates
+- JSON export does not include detail history, work-order statuses, or task assignments; importing a backup replaces the registry and clears those records

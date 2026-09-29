@@ -1,0 +1,87 @@
+Dart SDK 3.11.1
+Flutter SDK 3.41.4
+maintenanceschedular 0.1.0+1
+
+dependencies:
+- cupertino_icons 1.0.8
+- flutter 0.0.0 [characters collection material_color_utilities meta vector_math sky_engine]
+- path 1.9.1
+- shared_preferences 2.5.4 [flutter shared_preferences_android shared_preferences_foundation shared_preferences_linux shared_preferences_platform_interface shared_preferences_web shared_preferences_windows]
+- sqflite 2.4.2 [flutter sqflite_android sqflite_darwin sqflite_platform_interface sqflite_common path]
+- sqflite_common 2.5.6 [synchronized path meta]
+- sqflite_common_ffi 2.4.0+2 [sqlite3 sqflite_common synchronized path meta]
+- sqflite_common_ffi_web 1.1.1 [path sqflite_common_ffi sqflite_common sqlite3 http web synchronized process_run dev_build pub_semver args meta]
+
+dev dependencies:
+- flutter_lints 6.0.0 [lints]
+- flutter_test 0.0.0 [flutter test_api matcher path fake_async clock stack_trace vector_math leak_tracker_flutter_testing collection meta stream_channel]
+- msix 3.16.13 [args yaml path package_config get_it image pub_semver console cli_util]
+
+transitive dependencies:
+- archive 4.0.9 [path posix]
+- args 2.7.0
+- async 2.13.0 [collection meta]
+- boolean_selector 2.1.2 [source_span string_scanner]
+- characters 1.4.1
+- cli_util 0.4.2 [meta path]
+- clock 1.1.2
+- code_assets 1.0.0 [collection hooks]
+- collection 1.19.1
+- console 4.1.0 [vector_math]
+- crypto 3.0.7 [typed_data]
+- dev_build 1.1.5 [collection process_run pub_semver yaml path meta pool args synchronized]
+- fake_async 1.3.3 [clock collection]
+- ffi 2.2.0
+- file 7.0.1 [meta path]
+- flutter_web_plugins 0.0.0 [flutter]
+- get_it 9.2.1 [async collection meta]
+- glob 2.1.3 [async collection file path string_scanner]
+- hooks 1.0.2 [collection crypto logging meta pub_semver yaml]
+- http 1.6.0 [async http_parser meta web]
+- http_parser 4.1.2 [collection source_span string_scanner typed_data]
+- image 4.8.0 [archive meta xml]
+- leak_tracker 11.0.2 [clock collection meta path vm_service]
+- leak_tracker_flutter_testing 3.0.10 [flutter leak_tracker leak_tracker_testing matcher meta]
+- leak_tracker_testing 3.0.2 [leak_tracker matcher meta]
+- lints 6.1.0
+- logging 1.3.0
+- matcher 0.12.19 [async meta stack_trace term_glyph test_api]
+- material_color_utilities 0.13.0 [collection]
+- meta 1.17.0
+- native_toolchain_c 0.17.6 [code_assets glob hooks logging meta pub_semver]
+- package_config 2.2.0 [path]
+- path_provider_linux 2.2.1 [ffi flutter path path_provider_platform_interface xdg_directories]
+- path_provider_platform_interface 2.1.2 [flutter platform plugin_platform_interface]
+- path_provider_windows 2.3.0 [ffi flutter path path_provider_platform_interface]
+- petitparser 7.0.2 [meta collection]
+- platform 3.1.6
+- plugin_platform_interface 2.1.8 [meta]
+- pool 1.5.2 [async stack_trace]
+- posix 6.5.0 [ffi meta path]
+- process_run 1.3.1+1 [path collection string_scanner yaml meta args pub_semver synchronized]
+- pub_semver 2.2.0 [collection]
+- shared_preferences_android 2.4.21 [flutter shared_preferences_platform_interface]
+- shared_preferences_foundation 2.5.6 [flutter shared_preferences_platform_interface]
+- shared_preferences_linux 2.4.1 [file flutter path path_provider_linux path_provider_platform_interface shared_preferences_platform_interface]
+- shared_preferences_platform_interface 2.4.1 [flutter plugin_platform_interface]
+- shared_preferences_web 2.4.3 [flutter flutter_web_plugins shared_preferences_platform_interface web]
+- shared_preferences_windows 2.4.1 [file flutter path path_provider_platform_interface path_provider_windows shared_preferences_platform_interface]
+- sky_engine 0.0.0
+- source_span 1.10.2 [collection path term_glyph]
+- sqflite_android 2.4.2+3 [flutter sqflite_common path sqflite_platform_interface]
+- sqflite_darwin 2.4.2 [flutter sqflite_platform_interface meta sqflite_common path]
+- sqflite_platform_interface 2.4.0 [flutter platform sqflite_common plugin_platform_interface meta]
+- sqlite3 3.2.0 [collection ffi meta path web typed_data hooks code_assets native_toolchain_c crypto]
+- stack_trace 1.12.1 [path]
+- stream_channel 2.1.4 [async]
+- string_scanner 1.4.1 [source_span]
+- synchronized 3.4.0
+- term_glyph 1.2.2
+- test_api 0.7.10 [async boolean_selector collection meta source_span stack_trace stream_channel string_scanner term_glyph]
+- typed_data 1.4.0 [collection]
+- vector_math 2.2.0
+- vm_service 15.0.2
+- web 1.1.1
+- xdg_directories 1.1.0 [meta path]
+- xml 6.6.1 [collection meta petitparser]
+- yaml 3.1.3 [collection source_span string_scanner]
