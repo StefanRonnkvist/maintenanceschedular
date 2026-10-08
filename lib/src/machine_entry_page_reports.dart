@@ -68,12 +68,14 @@ extension _MachineEntryPageReportsExtension on _MachineEntryPageState {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  'Start by adding machines and their recurring tasks, then '
-                  'add employees with the licenses needed for assignment. '
-                  'Native app records are stored locally on this device, so '
-                  'export the database regularly when you need a transferable '
-                  'backup. Web database functions are unavailable and browser '
-                  'session data is temporary.',
+                  'Start by adding machines, their sub-assemblies, and '
+                  'recurring tasks. Set each machine\'s last-check date to '
+                  'anchor calendar forecasts, then add employees and their '
+                  'licenses for work-order assignment. Native app records are '
+                  'stored locally on this device; use the storage icon to '
+                  'export a transferable JSON registry backup. Web database '
+                  'functions are unavailable and browser-session data is '
+                  'temporary.',
                 ),
               ],
             ),
@@ -101,9 +103,11 @@ extension _MachineEntryPageReportsExtension on _MachineEntryPageState {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  'Enter machine details, required licenses, and any '
-                  'sub-assemblies with recurring maintenance tasks. Select '
-                  'Add Machine to save the complete record.',
+                  'Enter the machine details, last-check date, and required '
+                  'licenses, then add sub-assemblies and their recurring '
+                  'maintenance tasks. Choose an interval for each task; '
+                  'hour-based tasks are tracked but are not given calendar '
+                  'forecast dates. Select Add Machine to save the record.',
                 ),
               ],
             ),
@@ -161,9 +165,11 @@ extension _MachineEntryPageReportsExtension on _MachineEntryPageState {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  'Add, edit, search, filter, sort, or remove employees. Assign '
-                  'skills and licenses, and manage the available skill and '
-                  'license types.',
+                  'Add, edit, search, filter, sort, or remove employees. '
+                  'Assign skills and licenses, and manage the available skill '
+                  'and license types. Skills are for reference; work-order '
+                  'assignment checks that an employee holds every license '
+                  'required by the machine.',
                 ),
               ],
             ),
@@ -192,9 +198,11 @@ extension _MachineEntryPageReportsExtension on _MachineEntryPageState {
                 const SizedBox(height: 8),
                 const Text(
                   'Filter machines by component category, task type, interval, '
-                  'or search text. Expand a machine to update operating hours, '
-                  'idle hours, and its last-check date, or review saved detail '
-                  'history and the current work-order status.',
+                  'or search text. Expand a machine to review maintenance due '
+                  'and update operating hours, idle hours, or the last-check '
+                  'date. Changes to machine and sub-assembly operating details '
+                  'are saved in timestamped history; work-order status is '
+                  'shown when available.',
                 ),
               ],
             ),
@@ -255,10 +263,11 @@ extension _MachineEntryPageReportsExtension on _MachineEntryPageState {
                 const SizedBox(height: 8),
                 const Text(
                   'Review all maintenance tasks in projected due-date order '
-                  'and print the schedule PDF. Forecasts repeat from the '
-                  'machine last-check date using approximate calendar '
-                  'intervals. Hour-based tasks remain listed with an '
-                  'unavailable forecast date.',
+                  'and print or share the schedule PDF. Forecasts repeat from '
+                  'the machine last-check date using approximate calendar '
+                  'intervals (30 days per month, 91 per quarter, 182 per '
+                  'half-year, 365 per year, and 730 per biannual interval). '
+                  'Hour-based tasks remain listed without a forecast date.',
                 ),
               ],
             ),
@@ -407,9 +416,11 @@ extension _MachineEntryPageReportsExtension on _MachineEntryPageState {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  'Use the Information tab to send a support question. The '
-                  'form includes app and platform details to help diagnose '
-                  'the issue.',
+                  'Use the Information tab to send a support question. With '
+                  'an internet connection, the form sends your name, email, '
+                  'question, package name, app version/build, platform, '
+                  'orientation, layout, and submission time to the support '
+                  'service. Do not include sensitive information in a request.',
                 ),
               ],
             ),

@@ -1,4 +1,4 @@
-Maintenance Schedular keeps equipment records, recurring tasks, work orders, and workforce qualifications together in one practical workspace. Core data stays on your device, with no hosted account required.
+Maintenance Schedular helps you organize equipment records, recurring maintenance, work orders, and workforce qualifications in one practical workspace. On supported native devices, operational records are stored locally; no hosted account or synchronization service is required.
 
 BUILD YOUR EQUIPMENT REGISTRY
 - Record model and serial information, location, manufacturer, operating hours, maintenance documents, and required licenses
@@ -15,6 +15,7 @@ PLAN UPCOMING WORK
 MANAGE PEOPLE AND OUTCOMES
 - Maintain employee records with skills and licenses
 - Search, filter, and sort the employee list
+- Use licenses—not employee skills—to determine work-order assignment eligibility
 - Save Work Complete, Partial, or Bypass outcomes
 - Add notes and reschedule Partial or Bypass work
 - Record timestamped changes to machine and sub-assembly operating details
@@ -31,7 +32,10 @@ PERSONALIZE THE WORKSPACE
 - Keep employee search, filter, and sort choices between sessions
 
 Important details:
-- Skills are recorded for reference; work-order eligibility is based on every license required by the machine
-- Date forecasts use calendar approximations for month and year intervals
+- Employee skills are recorded for reference; assignment eligibility requires every license specified for the machine
+- Forecasts repeat from the machine's last-check date. Calendar intervals use approximations (30 days per month, 91 per quarter, 182 per half-year, 365 per year, and 730 per biannual interval)
 - Hour-based tasks are recorded but do not receive forecast calendar dates
-- JSON export does not include detail history, work-order statuses, or task assignments; importing a backup replaces the registry and clears those records
+- CSV machine files contain machine-level fields, not sub-assemblies or maintenance tasks
+- JSON exports omit detail history, work-order statuses, and task assignments. Importing JSON replaces the registry and clears those excluded records
+- Web builds do not support the app's database functions; browser-session data is temporary. Use a native app build for persistent records
+- The optional Information form needs internet access to send a support request and app/platform diagnostics

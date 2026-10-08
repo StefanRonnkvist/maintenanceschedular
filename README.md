@@ -12,23 +12,25 @@ connection to send a support request with app and platform details.
 ## What This App Does
 
 - Register machines with model, serial, location, manufacturer, operating-hour,
-	maintenance-document, and license-requirement details.
+  maintenance-document, and license-requirement details.
 - Add sub-assemblies and recurring tasks to each machine.
 - Use built-in or custom task types, component categories, skills, and license
-	types.
+  types.
 - Forecast date-based maintenance from each machine's last-check date.
 - Record machine and sub-assembly detail changes with timestamped history.
 - Search and filter machines by maintenance task.
-- Manage employees, skills, and license qualifications.
+- Manage employees, skills, and license qualifications. Skills are recorded for
+  reference; task eligibility is determined by required licenses.
 - Assign scheduled tasks to employees who hold every license required by the
-	machine; use the contractor-needed option when no employee qualifies.
+  machine; use the contractor-needed option when no employee qualifies.
 - Save the current work-order outcome as Work Complete, Partial, or Bypass,
-	with optional notes and rescheduling for Partial or Bypass work.
-- Generate PDF reports for the machine list, schedule, and work orders.
+  with optional notes and rescheduling for Partial or Bypass work.
+- Generate printable/shareable PDF reports for the machine list, schedule, and
+  seven-day work orders.
 - Export and import machine-registry data as JSON.
 - Export and import employees or machines as CSV, with templates for bulk entry.
 - Choose a light, dark, or system theme and arrange the tabs for the current
-	device.
+  device.
 
 ## Scheduling Logic
 
@@ -65,9 +67,10 @@ sort choices are stored in local preferences.
 
 - Android, iOS, and macOS use native `sqflite`.
 - Windows and Linux use `sqflite_common_ffi`.
-- Web builds open with a warning, but database functions are unavailable and
-	entered data is temporary for the current browser session. Use a native build
-	for persistent records.
+- Web builds display a warning because database functions are unavailable there;
+  entered data is temporary for the current browser session. Use a native build
+  for persistent records.
+- The Information form requires an internet connection to send a support request.
 
 ## Tech Stack
 
@@ -128,8 +131,8 @@ dart run msix:create --build-windows=false
 Database actions are available from the toolbar storage icon.
 
 - Export Database: creates JSON containing machines, required licenses,
-	sub-assemblies, maintenance tasks, skill types, employees, employee skills,
-	and employee licenses.
+  sub-assemblies, maintenance tasks, skill types, employees, employee skills,
+  and employee licenses.
 - Import Database: replaces the current registry with supported data from a
 	compatible JSON export.
 - Export Employees CSV / Export Machines CSV.
@@ -156,12 +159,12 @@ CSV notes:
 ## Privacy And Connectivity
 
 - Machine, employee, schedule, and work-order records stay in the app's local
-	database; there is no hosted account or synchronization service.
+  database; there is no hosted account or synchronization service.
 - PDF, JSON, and CSV files leave the app only when you choose an export, print,
-	or share action.
-- Sending the Information form posts your name, email address, question, app
-	version/build, platform, orientation, layout class, and submission time to
-	the configured support endpoint.
+  or share action.
+- Sending the Information form posts your name, email address, question, package
+  name, app version/build, platform, orientation, layout class, and submission
+  time to the configured support endpoint.
 
 ## Validation
 

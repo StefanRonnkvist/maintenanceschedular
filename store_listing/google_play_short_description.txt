@@ -1,1 +1,1 @@
-Manage machine maintenance, work orders, forecasts, and qualified staff.
+Plan machine maintenance, assign qualified staff, and track work orders.
