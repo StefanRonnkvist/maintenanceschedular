@@ -1,7 +1,7 @@
 name: plannedmaintenance
 description: "A new Flutter project."
 publish_to: 'none'
-version: 0.1.22+23
+version: 0.1.25+26
 
 environment:
   sdk: ^3.11.1
@@ -24,7 +24,7 @@ msix_config:
   publisher_display_name: Planned Maintenance
   identity_name: com.plannedmaintenance.app
   publisher: CN=Planned Maintenance
-  msix_version: 0.1.22.23
+  msix_version: 0.1.25.26
   install_certificate: false
   sign_msix: false
 
