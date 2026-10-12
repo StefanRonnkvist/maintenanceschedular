@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:package_info_plus/package_info_plus.dart';
+import 'package:plannedmaintenance/core/storage/app_database.dart';
 
 /// Validates [serverUrl] and creates a contact page targeting `contact.php`.
 ///
@@ -124,7 +125,15 @@ class _ContactPageState extends State<ContactPage> {
   @override
   void initState() {
     super.initState();
+    _restoreContactFields();
     _detectPackageInformation();
+  }
+
+  /// Restores only user-editable support fields from the local database.
+  Future<void> _restoreContactFields() async {
+    _nameController.text = AppDatabase.readString('support_name') ?? '';
+    _emailController.text = AppDatabase.readString('support_email') ?? '';
+    _questionController.text = AppDatabase.readString('support_question') ?? '';
   }
 
   @override
@@ -240,6 +249,7 @@ class _ContactPageState extends State<ContactPage> {
 
       if (response.statusCode >= 200 && response.statusCode < 300) {
         _questionController.clear();
+        await AppDatabase.writeString('support_question', '');
         _setServerResponse(
           response: _buildResponseSummary(response),
           isError: false,
@@ -442,6 +452,8 @@ class _ContactPageState extends State<ContactPage> {
                     textCapitalization: TextCapitalization.words,
                     textInputAction: TextInputAction.next,
                     autofillHints: const [AutofillHints.name],
+                    onChanged: (String value) =>
+                        AppDatabase.writeString('support_name', value),
                     validator: _validateName,
                   ),
                   const SizedBox(height: 16),
@@ -458,6 +470,8 @@ class _ContactPageState extends State<ContactPage> {
                     textInputAction: TextInputAction.next,
                     autofillHints: const [AutofillHints.email],
                     autocorrect: false,
+                    onChanged: (String value) =>
+                        AppDatabase.writeString('support_email', value),
                     validator: _validateEmail,
                   ),
                   const SizedBox(height: 16),
@@ -556,6 +570,8 @@ class _ContactPageState extends State<ContactPage> {
                     maxLength: 3000,
                     keyboardType: TextInputType.multiline,
                     textCapitalization: TextCapitalization.sentences,
+                    onChanged: (String value) =>
+                        AppDatabase.writeString('support_question', value),
                     validator: _validateQuestion,
                   ),
                   const SizedBox(height: 16),

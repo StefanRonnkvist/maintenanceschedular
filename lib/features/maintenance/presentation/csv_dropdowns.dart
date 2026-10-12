@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:plannedmaintenance/core/storage/app_database.dart';
 import 'package:plannedmaintenance/features/maintenance/data/csv_data_loader.dart';
 import 'package:plannedmaintenance/features/maintenance/presentation/dropdown_cascade_helper.dart';
 
@@ -31,11 +34,16 @@ class _CsvDropdownsState extends State<CsvDropdowns> {
   Future<void> _loadCsvData() async {
     try {
       final csvData = await _dataLoader.load();
+      final List<String?> restoredValues = _restoreSelection(
+        AppDatabase.readString('maintenance_selection'),
+        csvData.rows,
+        csvData.headers.length,
+      );
       setState(() {
         _headers = csvData.headers;
         _data = csvData.rows;
         _levelDetails = csvData.levelDetails;
-        _selectedValues = List<String?>.filled(_headers.length, null);
+        _selectedValues = restoredValues;
         _isLoading = false;
       });
     } catch (e) {
@@ -46,7 +54,7 @@ class _CsvDropdownsState extends State<CsvDropdowns> {
     }
   }
 
-  /// Applies a selection and invalidates every dependent value to its right.
+  /// Applies a selection, invalidates dependent fields, and persists the state.
   void _onDropdownChanged(String? newValue, int index) {
     if (newValue != _selectedValues[index]) {
       setState(() {
@@ -55,7 +63,41 @@ class _CsvDropdownsState extends State<CsvDropdowns> {
           _selectedValues[i] = null;
         }
       });
+      AppDatabase.writeString(
+        'maintenance_selection',
+        jsonEncode(_selectedValues),
+      );
     }
+  }
+
+  /// Restores only a valid prefix of the saved cascading selections.
+  List<String?> _restoreSelection(
+    String? saved,
+    List<List<String>> rows,
+    int length,
+  ) {
+    final List<String?> restored = List<String?>.filled(length, null);
+    if (saved == null) {
+      return restored;
+    }
+
+    try {
+      final List<dynamic> decoded = jsonDecode(saved) as List<dynamic>;
+      var matchingRows = rows;
+      for (int index = 0; index < length && index < decoded.length; index++) {
+        final String? value = decoded[index] as String?;
+        if (value == null || !matchingRows.any((row) => row[index] == value)) {
+          break;
+        }
+        restored[index] = value;
+        matchingRows = matchingRows
+            .where((row) => row[index] == value)
+            .toList();
+      }
+    } catch (_) {
+      return List<String?>.filled(length, null);
+    }
+    return restored;
   }
 
   /// Builds the explanatory text associated with a selected level.

@@ -50,7 +50,7 @@ void main() {
     expect(find.text('Help Center'), findsOneWidget);
   });
 
-  testWidgets('shows and dismisses the red PWA database notice', (
+  testWidgets('shows and dismisses the browser-storage notice', (
     WidgetTester tester,
   ) async {
     await tester.pumpWidget(
@@ -58,8 +58,8 @@ void main() {
     );
 
     const String noticeText =
-        'PWA notice: database functions are not available on web builds. '
-        'Data is temporary for this browser session only.';
+        'Your selections and support-form fields are stored in this browser. '
+        'Clearing browser data removes saved values.';
     final Finder notice = find.text(noticeText);
     final Finder noticeMaterial = find.ancestor(
       of: notice,
@@ -69,7 +69,7 @@ void main() {
     expect(notice, findsOneWidget);
     expect(
       tester.widget<Material>(noticeMaterial.first).color,
-      Theme.of(tester.element(notice)).colorScheme.error,
+      Theme.of(tester.element(notice)).colorScheme.surfaceContainerHighest,
     );
 
     await tester.tap(find.byTooltip('Dismiss PWA notice'));

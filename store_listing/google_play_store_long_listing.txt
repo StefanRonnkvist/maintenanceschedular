@@ -1,23 +1,19 @@
-2D Laser Maintenance is a guided reference for planned maintenance tasks on 2D laser systems and supporting equipment.
+Planned Maintenance is an offline reference for planned maintenance on 2D laser systems and supporting equipment. Use a guided lookup to find task requirements, service intervals, estimated time, and maintenance-sheet references from bundled schedule data.
 
-Choose an equipment group and follow the fields that appear. Each selection narrows the next field, and values with only one match are filled automatically. The result shows the task description, estimated duration, required skill level, maintenance sheet reference, out-of-service status, and applicable service intervals.
-
-FEATURES
-- Browse planned maintenance information by equipment group and task
+FIND THE MAINTENANCE INFORMATION YOU NEED
+- Use separate tabs for Maintenance, Help, and Information/support
+- Browse tasks by equipment group and follow the fields that appear
+- Narrow each choice step by step; values with only one match are filled in automatically
 - Review task descriptions and estimated durations
-- Check whether equipment must be taken out of service
-- Find maintenance sheet references
-- Review schedule, time-in-service, checking, replacement, and as-needed intervals
-- Understand L1 operator, L2 maintenance technician, and L3 authorized service technician requirements
-- Browse bundled maintenance data offline
-- Switch between system, light, and dark themes
-- Read in-app guidance for fields, workflow, safety, settings, and troubleshooting
-- Send questions with app and platform details through the Information tab
+- Check required personnel levels, out-of-service status, and maintenance-sheet references
+- See schedule, time-in-service, checking, replacement, and as-needed intervals
+- Keep your maintenance selections and support-form entries saved locally between app sessions
+- Learn about L1 operator, L2 maintenance technician, and L3 authorized service technician levels
+USE IT OFFLINE
+The maintenance schedules and level descriptions are included with the app, so you can browse them without an internet connection. The app offers system, light, and dark appearance modes, plus in-app guidance for using the schedule and understanding its fields.
 
-The app includes schedules for CNC controls, Platino Linear machines, dust collectors, air treatment equipment, water panels, chillers, automatic pallets, and other related systems represented in the included maintenance data.
+SUPPORT
+You can send a question to the support service from the Information tab. Sending requires an internet connection and submits the name, email address, and question you enter, along with app version/build, package, platform, orientation, and layout information. Do not include sensitive information in a support request.
 
-CONNECTIVITY AND PRIVACY
-Browsing the bundled maintenance data does not require an internet connection. Sending a support question requires a connection and submits the name, email address, question, app version, and basic platform and layout details shown in the Information tab. The app contains no advertising or analytics SDKs.
-
-IMPORTANT SAFETY INFORMATION
-This app is a reference aid. It does not replace the machine manual, official maintenance sheets, qualified training, lockout procedures, personal protective equipment, or workplace safety requirements. Always follow the current approved instructions and ensure that work is carried out by personnel with the required skill level and authorization.
+SAFETY
+This app is a reference aid, not a replacement for the machine manual, approved maintenance sheets, qualified training, lockout procedures, or workplace safety requirements. Always follow current approved instructions and ensure work is performed by appropriately qualified and authorized personnel.

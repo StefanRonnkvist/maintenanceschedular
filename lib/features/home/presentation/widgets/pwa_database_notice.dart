@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Dismissible warning about storage limitations in the web build.
+/// Dismissible note explaining that web data is stored in this browser.
 class PwaDatabaseNotice extends StatefulWidget {
   const PwaDatabaseNotice({super.key});
 
@@ -18,7 +18,7 @@ class _PwaDatabaseNoticeState extends State<PwaDatabaseNotice> {
     }
 
     return Material(
-      color: Theme.of(context).colorScheme.error,
+      color: Theme.of(context).colorScheme.surfaceContainerHighest,
       child: SafeArea(
         top: false,
         bottom: false,
@@ -28,10 +28,10 @@ class _PwaDatabaseNoticeState extends State<PwaDatabaseNotice> {
             children: <Widget>[
               Expanded(
                 child: Text(
-                  'PWA notice: database functions are not available on web '
-                  'builds. Data is temporary for this browser session only.',
+                  'Your selections and support-form fields are stored in this '
+                  'browser. Clearing browser data removes saved values.',
                   style: TextStyle(
-                    color: Theme.of(context).colorScheme.onError,
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -40,7 +40,7 @@ class _PwaDatabaseNoticeState extends State<PwaDatabaseNotice> {
                 onPressed: () => setState(() => _isVisible = false),
                 icon: Icon(
                   Icons.close,
-                  color: Theme.of(context).colorScheme.onError,
+                  color: Theme.of(context).colorScheme.onSurface,
                 ),
                 tooltip: 'Dismiss PWA notice',
               ),
